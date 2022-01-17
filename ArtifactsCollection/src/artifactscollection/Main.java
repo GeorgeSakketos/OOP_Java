@@ -1,11 +1,17 @@
 package artifactscollection;
 public class Main 
-{
-    public static void main(String[] args) 
+{ 
+    public void auction(Artifact[] array, String movement, String condition) 
     {
         
     }
     
+    public static void main(String[] args) 
+    {
+        Artifact[] objects;
+        objects = new Artifact[10];
+        objects[0] = new Masterpiece(1, "Mike", 1998, "move", "good");
+    }
 }
 
 class Artifact
@@ -14,9 +20,12 @@ class Artifact
     private String creator;
     private int year;
     
-    Artifact()
+    Artifact(int index, String creator, int year)
     {
-        
+        System.out.println("Creating an instance of Artifact");
+        this.index = index;
+        this.creator = creator;
+        this.year = year;
     }
     
     public void getInfo()
@@ -35,9 +44,12 @@ class Masterpiece extends Artifact
     public String movement;
     public String condition;
     
-    Masterpiece()
+    Masterpiece(int index, String creator, int year, String movement, String condition)
     {
-        
+        super(index, creator, year);
+        System.out.println("Creating an instance of Masterpiece");
+        this.movement = movement;
+        this.condition = condition;
     }
     
     public void getInfo()
@@ -52,6 +64,15 @@ class Painting extends Masterpiece
     private int length;
     private int width;
     private String technique;
+    
+    Painting(int index, String creator, int year, String movement, String condition, int length, int width, String technique)
+    {
+        super(index, creator, year, movement, condition);
+        System.out.println("Creating an instance of Painting");
+        this.length = length;
+        this.width = width;
+        this.technique = technique;
+    }
     
     public void getInfo()
     {
@@ -105,6 +126,14 @@ class Sculpture extends Masterpiece
 {
     private int volume;
     private String material;
+    
+    Sculpture(int index, String creator, int year, String movement, String condition, int volume, String material)
+    {
+        super(index, creator, year, movement, condition);
+        System.out.println("Creating an instance of Sculpture");
+        this.volume = volume;
+        this.material = material;
+    }
     
     public void getInfo()
     {
