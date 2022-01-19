@@ -1,4 +1,6 @@
 package artifactscollection;
+import java.util.Scanner;
+
 public class Main 
 { 
     public static void auction(Artifact[] array, String movement, String condition) 
@@ -29,6 +31,16 @@ public class Main
     
     public static void main(String[] args) 
     {
+        Scanner object = new Scanner(System.in);
+        System.out.println("Give info: ");
         
+        int N = object.nextInt();
+        
+        String[] str = object.nextLine().split(" ");
+        
+        String movement = str[0];
+        String condition = str[1];
+        
+        System.out.println(N + movement + condition);
     }
 }
