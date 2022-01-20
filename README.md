@@ -6,6 +6,12 @@ javac artifactscollection/*.java
 
 > Για την σωστή μεταγλώττιση πρέπει να μην είμαστε μέσα στον φάκελο ***artifactscollection*** αλλα στον φάκελο ***src***
 
+## Εντολή Εκτέλεσης
+
+java artifactscollection/Main
+
+> Για την σωστή εκτέλεση πρέπει να μην είμαστε μέσα στον φάκελο ***artifactscollection*** αλλα στον φάκελο ***src***
+
 ## Δοκιμαστικές Τιμές
 
 ***10 impressionism good***
