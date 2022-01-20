@@ -19,7 +19,7 @@ public class Painting extends Masterpiece
     {
         int surface = length + width;
         super.getInfo();
-        System.out.println("Length: " + length + "\nWidth: " + width + "\nTechnique: " + technique + "\nSurface: " + surface + "\n");
+        System.out.println("Length: " + length + "\nWidth: " + width + "\nTechnique: " + technique + "\nSurface: " + surface);
     }
     
     public boolean evaluate(String move, String cond)
