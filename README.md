@@ -6,7 +6,7 @@ javac artifactscollection/*.java
 
 > Για την σωστή μεταγλώττιση πρέπει να μην είμαστε μέσα στον φάκελο artifactscollection
 
-## Δοκιμαστικές Τιμές Παράμετρων
+## Δοκιμαστικές Τιμές
 
 ***10 impressionism good***
 
