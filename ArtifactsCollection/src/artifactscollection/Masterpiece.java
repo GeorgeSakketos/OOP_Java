@@ -1,8 +1,8 @@
 package artifactscollection;
 public class Masterpiece extends Artifact
 {
-    public String movement;
-    public String condition;
+    protected String movement;
+    protected String condition;
     
     Masterpiece(int index, String creator, int year, String movement, String condition)
     {
