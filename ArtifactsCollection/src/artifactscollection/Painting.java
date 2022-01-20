@@ -23,31 +23,31 @@ public class Painting extends Masterpiece
     }
     
     public boolean evaluate(String move, String cond)
-    {
+    {   
         boolean isMovement = false;
-        if (move == "impressionism")
+        if (move.equals("impressionism"))
         {
             isMovement = true;
         }
-        else if (move == "expressionism" && (movement == "expressionism" || movement == "naturalism"))
+        else if (move.equals("expressionism") && (movement.equals("expressionism") || movement.equals("naturalism")))
         {
             isMovement = true;
         }
-        else if (move == "naturalism" && movement == "naturalism")
+        else if (move.equals("naturalism") && movement.equals("naturalism"))
         {
             isMovement = true;
         }
         
         boolean isCondition = false;
-        if (cond == "bad")
+        if (cond.equals("bad"))
         {
             isCondition = true;
         }
-        else if (cond == "good" && (condition == "good" || condition == "excellent"))
+        else if (cond.equals("good") && (condition.equals("good") || condition.equals("excellent")))
         {
             isCondition = true;
         }
-        else if (cond == "excellent" && condition == "excellent")
+        else if (cond.equals("excellent") && condition.equals("excellent"))
         {
             isCondition = true;
         }

@@ -16,35 +16,35 @@ public class Sculpture extends Masterpiece
     public void getInfo()
     {
         super.getInfo();
-        System.out.println("Volume: " + volume + " Material: " + material + "\n");
+        System.out.println("Volume: " + volume + "\nMaterial: " + material);
     }
     
     public boolean evaluate(String move, String cond)
     {
         boolean isMovement = false;
-        if (move == "impressionism" && movement == "impressionism")
+        if (move.equals("impressionism") && movement.equals("impressionism"))
         {
             isMovement = true;
         }
-        else if (move == "expressionism" && movement == "expressionism")
+        else if (move.equals("expressionism") && movement.equals("expressionism"))
         {
             isMovement = true;
         }
-        else if (move == "naturalism" && movement == "naturalism")
+        else if (move.equals("naturalism") && movement.equals("naturalism"))
         {
             isMovement = true;
         }
         
         boolean isCondition = false;
-        if (cond == "bad" && condition == "bad")
+        if (cond.equals("bad") && condition.equals("bad"))
         {
             isCondition = true;
         }
-        else if (cond == "good" && condition == "good")
+        else if (cond.equals("good") && condition.equals("good"))
         {
             isCondition = true;
         }
-        else if (cond == "excellent" && condition == "excellent")
+        else if (cond.equals("excellent") && condition.equals("excellent"))
         {
             isCondition = true;
         }

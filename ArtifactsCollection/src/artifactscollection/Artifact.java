@@ -15,11 +15,11 @@ public class Artifact
     
     public void getInfo()
     {
-        System.out.println("Creator: " + creator + "\nYear: " + year + "\n");
+        System.out.println("Creator: " + creator + "\nYear: " + year);
     }
     
     public void getIndex()
     {
-        System.out.println("Index: " + index + "\n");
+        System.out.println("\nIndex: " + index);
     }
 }

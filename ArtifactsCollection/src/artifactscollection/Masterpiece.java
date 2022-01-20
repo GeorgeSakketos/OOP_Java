@@ -16,6 +16,6 @@ public class Masterpiece extends Artifact
     public void getInfo()
     {
         super.getInfo();
-        System.out.println("Movement: " + movement + "\nCondition: " + condition + "\n");
+        System.out.println("Movement: " + movement + "\nCondition: " + condition);
     }
 }
